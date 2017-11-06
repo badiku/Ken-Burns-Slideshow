@@ -44,7 +44,7 @@ Class MainWindow
     Public Shared blurmode As Integer = 0
     Private Declare Function SetThreadExecutionState Lib "kernel32" (ByVal esFlags As EXECUTION_STATE) As EXECUTION_STATE
     Private ExecState_Set As Boolean
-    Public Shared nextcloseaction As CloseAction = CloseAction.FadeToBlack
+    Public Shared nextcloseaction As CloseAction = CloseAction.FadeToDesktop
     Public Shared randomizeV As Boolean = False
     Public Shared randomizeA As Boolean = False
     Public Shared recursive_folder As Boolean = True
