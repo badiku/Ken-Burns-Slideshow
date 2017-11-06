@@ -1283,6 +1283,7 @@ Class MainWindow
     End Sub
 
     Friend Async Sub NextSong()
+        If ListOfMusic.Count < 1 Then Return
         If playing AndAlso Not audiofading Then Await Task.Run(AddressOf FadeoutAudio)
         currentaudio += 1
         If currentaudio = ListOfMusic.Count Then
